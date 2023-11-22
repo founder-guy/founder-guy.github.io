@@ -1,0 +1,75 @@
+/* Global styles and resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+.barcode-generator {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+
+
+#isbn-data {
+    margin-bottom: 20px;  /* Apply margin-bottom selectively to ISBN input */
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #38870d;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #1d511a;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #38870d;
+}
+
+button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.barcode-output {
+    margin-top: 20px;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.currency-container {
+    flex: 1;
+}
+
+.price-input-container {
+    flex: 1;
+    padding-right: 10px;  /* Only apply right-padding to the price container */
+}
+
+#barcode-canvas {
+    margin: 20px 0;
+    border: 1px solid #1d511a;
+}
